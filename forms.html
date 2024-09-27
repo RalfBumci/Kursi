@@ -14,11 +14,19 @@
             font-family: Arial, Helvetica, sans-serif;
             font-weight:  bold;
         }
-        input {
+        input, select {
             width: 100%;
             height: 45px;
             font-size: 1.5em;
             background-color: lightgray;
+            margin-bottom: 15px;
+        }
+        #checks input {
+            width: 15%;
+        }
+        #checks {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
         }
         button {
             width: 100%;
@@ -42,7 +50,28 @@
         <label for="userEmail">Email</label>
         <input type="email" id="userEmail"> <br>
         <label for="phoneNumber">Phone Number</label>
-        <input type="phone" id="phoneNumber">
+        <input type="phone" id="phoneNumber" placeholder="###-###-####">
+        <label for="department">Department</label>
+        <select id="department">
+            <option value="accounting">accounting</option>
+            <option value="marketing">marketing</option>
+            <option value="admin">administration</option>
+            <option value="exec">executives</option>
+        </select>
+        <div id="checks">
+        <label for="interests">Interests</label><br>
+        <input type="checkbox" id="interests" value="sport">Sport <br>
+        <input type="checkbox" id="interests" value="music">Music <br>
+        <input type="checkbox" id="interests" value="social action">Social action <br>
+        <input type="checkbox" id="interests" value="cooking">Cooking <br>
+        <label for="officeLocation">Office Location</label><br>
+        <input type="radio" id="New York" name="office">New York <br>
+        <input type="radio" id="Chicago" name="office">Chicago <br>
+        <input type="radio" id="Las Vegas" name="office">Las Vegas <br>
+        <input type="radio" id="Seattle " name="office">Seattle <br>
+    </div>
+        <label for="doh">Date Of Hire</label>
+        <input type="date" id="doh">
         <button type="submit">Submit Data</button>
     </form>
 </body>
