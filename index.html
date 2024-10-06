@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VS CODE</title>
+    <title>Document</title>
+    <style>
+        .recipes {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+
+        }
+
+        .recipe1 {
+            background-color: rgba(222, 184, 135, 0.823);
+            display: flex;
+            font-size: xx-large;
+            height: 100px;
+
+        }
+
+        .recipe2 {
+            background-color: rgba(238, 232, 170, 0.829);
+            display: flex;
+            font-size: xx-large;
+
+        }
+
+        .recipe3 {
+            background-color: rgba(255, 166, 0, 0.863);
+            display: flex;
+            font-size: xx-large;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        h1,
+        h4 {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, from VS Code!</h1>
-    <p>We're using Live Server to update our website in real time!</p>
+    <article>
+        <h1>Interesting Recipes</h1>
+        <h4>Are you bored of cooking the same recipes over and over again, try some of our not so common recipes below
+        </h4>
+        <section class="recipes">
+            <section class="recipe1">
+                <a href="recipe 1.html">Cheeseburger Casserole</a>
+                <img src="Cheeseburger-Casserole-02.png" alt="Cheeseburger Casserole">
+            </section>
+            <section class="recipe2">
+                <a href="recipe 2.html">Creamy Lima Beans</a>
+                <img src="Creamy-Lima-Beans-01.png" alt="Creamy Lima Beans">
+            </section>
+            <section class="recipe3">
+                <a href="recipe 3.html">Chopped Cheese</a>
+                <img src="Chopped-Cheese-02.png" alt="Chopped Cheese">
+            </section>
+        </section>
+    </article>
 </body>
+
 </html>
