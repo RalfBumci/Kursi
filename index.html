@@ -6,60 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .recipes {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
+        article {
+            border: 1px solid wheat;
+            background-image: url('recipes.jpg');
 
         }
-
         .recipe1 {
+            
+            padding-top: 20px;
+            align-items: center;
+            padding-left: 350px;
             background-color: rgba(222, 184, 135, 0.823);
-            display: flex;
-            font-size: xx-large;
-            height: 100px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            font-size: xxx-large;
+            height: 300px;
 
         }
 
         .recipe2 {
+            
+            padding-top: 20px;
+            align-items: center;
+            padding-left: 350px;
+            padding-bottom: 20px;
             background-color: rgba(238, 232, 170, 0.829);
-            display: flex;
-            font-size: xx-large;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            font-size: xxx-large;
 
         }
 
         .recipe3 {
+            
+            padding-top: 20px;
+            align-items: center;
+            padding-left: 350px;
+            padding-bottom: 20px;
             background-color: rgba(255, 166, 0, 0.863);
-            display: flex;
-            font-size: xx-large;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            font-size: xxx-large;
         }
 
         img {
-            width: 100px;
+            width: 300px;
+            margin-left: 100px;
+        }
+        #Creamy-Lima-Beans-01 {
+            height: 300px;
         }
 
-        h1,
-        h4 {
+       .top{
             text-align: center;
+            color: brown;
+            background-color: rgba(222, 184, 135, 0.823);
+            height: 150px;
+            
+        }
+        h1 {
+            font-size: xxx-large;
+        }
+        h4 {
+            font-size: xx-large;
+        }
+        a {
+            color: brown;
         }
     </style>
+
 </head>
 
 <body>
     <article>
+        <section class="top">
         <h1>Interesting Recipes</h1>
-        <h4>Are you bored of cooking the same recipes over and over again, try some of our not so common recipes below
+        <h4>Are you bored of cooking the same recipes over and over again, try some of our not so common recipes below!
         </h4>
+    </section>
         <section class="recipes">
             <section class="recipe1">
+                
                 <a href="recipe 1.html">Cheeseburger Casserole</a>
                 <img src="Cheeseburger-Casserole-02.png" alt="Cheeseburger Casserole">
             </section>
             <section class="recipe2">
                 <a href="recipe 2.html">Creamy Lima Beans</a>
-                <img src="Creamy-Lima-Beans-01.png" alt="Creamy Lima Beans">
+                <img src="Creamy-Lima-Beans-01.png" alt="Creamy Lima Beans" id="Creamy-Lima-Beans-01">
             </section>
             <section class="recipe3">
-                <a href="recipe 3.html">Chopped Cheese</a>
+                <a href="recipe 3.html">Chopped Cheese</a> 
                 <img src="Chopped-Cheese-02.png" alt="Chopped Cheese">
             </section>
         </section>
