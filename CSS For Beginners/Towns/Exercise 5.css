@@ -1,0 +1,22 @@
+#Main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.town {
+    border: 1px solid black;
+    padding: 5px;
+    width: 30%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+img {
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+}
