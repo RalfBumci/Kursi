@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Project CSS
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(Building\ Exterior.png);
+            opacity: 0.95;
+
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: auto;
+        }
+
+        .property-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+
+        .property-title h2 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .property-description {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .property-price {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #e74c3c;
+        }
+
+        .property-features {
+            justify-content: space-between;
+        }
+
+
+        .feature img {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        .feature h3 {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        @media only screen and (min-width: 800px) {
+            .feature {
+                float: left;
+                width: 43%;
+                margin: 20px;
+                margin-left: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .feature {
+                float: left;
+                width: 90%;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            Century 22
+        </h1>
+    </div>
+    <div class="container">
+        <div class="property-title">
+            <h2>
+                Beautiful Family Home
+            </h2>
+        </div>
+        <div class="property-description">
+            <p>
+                3440 N Lake Shore Dr APT 11D, Chicago, IL 60657 <br>
+                2bd 2ba 1,220 sqft <br>
+
+                Condominium, single family residence <br>
+                Built in 1955 <br>
+                Steam <br>
+                Central air <br>
+                2 Attached garage spaces <br>
+                $1,189 monthly HOA fee <br>
+                $220 price/sqft <br>
+
+                Beautiful light filled 2 bed 2 bath corner condo right on Lake Michigan with unobstructed views of
+                Belmont harbor. Optimal layout with open kitchen, and updated baths. Price includes storage locker 68
+                located on the second floor. On-site valet parking is available for $195.00 per month. Weekly carwashes
+                available for $30 per month. Near CTA, shops, restaurants, Belmont Yacht Club, jogging, bike paths and
+                all the Lakeview neighborhood has to offer. Sorry no pets.
+            </p>
+        </div>
+        <div class="property-price">
+            $269,000
+        </div>
+        <div class="property-features">
+            <div class="feature">
+                <h3>
+                    Building
+                </h3>
+                <img src="exterior.png" alt="Exterior">
+                <img src="lobby.png" alt="lobby1">
+
+            </div>
+            <div class="feature">
+                <h3>
+                    Lobby & Elevator
+                </h3>
+                <img src="lobby-03.png" alt="lobby2">
+                <img src="elevator.png" alt="elevator">
+            </div>
+            <div class="feature">
+                <h3>
+                    Entrance
+                </h3>
+                <img src="entrance.png" alt="entrance">
+                <img src="interior.png" alt="interior">
+            </div>
+            <div class="feature">
+                <h3>
+                    Office
+                </h3>
+                <img src="office-02.png" alt="office2">
+                <img src="office.png" alt="office1">
+            </div>
+            <div class="feature">
+                <h3>
+                    Kitchen
+                </h3>
+                <img src="kitchen 03.png" alt="Kitchen1">
+                <img src="kitchen 02.png" alt="Kitchen2">
+            </div>
+            <div class="feature">
+                <h3>
+                    Dining Room
+                </h3>
+                <img src="dining.png" alt="dining1">
+                <img src="dining 02.png" alt="dining2">
+            </div>
+            <div class="feature">
+                <h3>
+                    Bedroom
+                </h3>
+                <img src="bedroom 02.png" alt="bedroom2">
+                <img src="bedroom.png" alt="bedroom1">
+
+            </div>
+
+            <div class="feature">
+                <h3>
+                    The View
+                </h3>
+                <img src="view-marina.png" alt="view">
+                <h3>
+                    Bathroom
+                </h3>
+                <img src="bathroom 02.png" alt="bathroom">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
