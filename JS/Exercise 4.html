@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+
+<body>
+    <div id="output"></div>
+    <script>
+        let amount = prompt ("How much did the member spend this month in additional charges?");
+        var additionalFee = parseFloat(amount);
+        const membershipFee = 500;
+        const taxRate = 6.25;
+
+        if (amount >= 250 && amount <= 500) {
+            discount = 10;
+        }
+        else if (amount >= 501 && amount <= 1000) {
+            discount = 12.5;
+        }
+        else if (amount >= 1001 && amount <= 2000) {
+            discount = 15;
+        }
+        else if (amount >= 2001) {
+            discount = 20;
+        }
+        else {
+            discount = 0;
+        }
+        var Subtotal = membershipFee + additionalFee;
+        var finalFee= Subtotal -  (Subtotal * discount / 100);
+        var tax = finalFee * (taxRate / 100);
+        var total = finalFee + tax;
+
+        document.getElementById("output").innerHTML = 
+            "Membership Fee:  $" + membershipFee +       //Membership
+
+            "<br>Additional Fees:  $" + additionalFee +         //Additional        
+
+            "<br><br>Subtotal:  $" + Subtotal +             //Subtotal
+            
+            "<br>Discount:   " + discount + "%" +           //Discount
+
+            "<br><br> Final Fee Bill: $" + finalFee +   //Final Fee
+
+            "<br> Tax:  $" + tax +                   //Tax
+
+            "<br><br> Grand Total:       $" + total;        //Grand Total
+
+    </script>
+</body>
+
+</html>
